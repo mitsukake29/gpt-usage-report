@@ -41,7 +41,7 @@ HEADER_LABELS = {
 }
 
 app = Flask(__name__)
-app.config["MAX_CONTENT_LENGTH"] = 32 * 1024 * 1024  # 32 MB
+app.config["MAX_CONTENT_LENGTH"] = 128 * 1024 * 1024  # 32 MB
 
 
 @app.route("/", methods=["GET", "POST"])
